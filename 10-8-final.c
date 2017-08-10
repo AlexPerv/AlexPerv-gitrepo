@@ -61,7 +61,6 @@ int main (void) { int i=0, a, b, c, count=0, nomer, nomer_1;  struct knizhka * z
 						    printf ("If you wanna choose another operation. Press Y (Yes) or N (No): \n");
     	        		        operation=put_check_operation();
     	        		            if (operation=='Y'){
-    	        		            	printf (" %d \n", MAX4);
     	        		            	MAX4 -=2;
     	        		                zapisnaya = (struct knizhka*) realloc (zapisnaya, sizeof(struct knizhka) *MAX4); /*”меньш€ем массив чтобы в нЄм не было лишних €чеек*/
     	        		                break;}
