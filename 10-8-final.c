@@ -42,8 +42,7 @@ int main (void) { int i=0, a, b, c, count=0, nomer, nomer_1;  struct knizhka * z
     int kkk=0; struct knizhka kkk_1 = {{'\0', '\0'}, '\0', '\0', '\0'};
     printf ("Vvedite imya fila: \n\n");
     s_gets(name, MAX2);
-    while ((check_name_file(name))!=1){
-    	s_gets(name, MAX2);}
+    while ((check_name_file(name))!=1){s_gets(name, MAX2);}
     int filecount=0;
     FILE * pbooks;
     int size = sizeof (struct knizhka);
