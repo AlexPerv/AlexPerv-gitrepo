@@ -97,8 +97,7 @@ int main (void) { int i=0, a, b, c, count=0, nomer, nomer_1;  struct knizhka * z
 				    while ((a=get_choice_file())!=4){
 				    	switch (a){
 				    		case 1:
-				    			if (i > 0){
-									fwrite(&zapisnaya[filecount], size, i-filecount, pbooks);}
+				    			if (i > 0){fwrite(&zapisnaya[filecount], size, i-filecount, pbooks);}
 				    			break;
 				    		case 2:
 				    			rewind(pbooks);            /*Èה¸ל ג םאקאכמ פאיכא */
