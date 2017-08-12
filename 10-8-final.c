@@ -97,8 +97,7 @@ int main (void) { int i=0, a, b, c, count=0, nomer, nomer_1;  struct knizhka * z
 				    while ((a=get_choice_file())!=4){
 				    	switch (a){
 				    		case 1:
-				    			if (i > 0){
-									fwrite(&zapisnaya[filecount], size, i-filecount, pbooks);}
+				    			if (i > 0){fwrite(&zapisnaya[filecount], size, i-filecount, pbooks);}
 				    			break;
 				    		case 2:
 				    			rewind(pbooks);            /*Идём в начало файла */
@@ -229,8 +228,7 @@ char put_check_operation(void){char operation; /*Функция и ввода и проверки ввод
 	   operation='Y';
 	return operation;}
 void cleaner(void){    /*Функция очистки строки*/
-	while (getchar() !='\n')
-		continue;}
+	while (getchar() !='\n') continue;}
 int check_nomer(){int c;      /*Функция проверки  номера массива*/
 	while ((c=check_number())>MAX4 || c<0){
 		if (c>MAX4)
@@ -242,8 +240,7 @@ void copy (struct knizhka *ukazatel, int a, int b){ /*Функция копирования элемен
 	ukazatel[b]=ukazatel[a];}
 void delete (struct knizhka *ukazatel, int a){ /*Функция удпления элемента массива*/
 	struct knizhka kkk = {{'\0', '\0'}, '\0', '\0', '\0'};
-	for(a; a<MAX4; a++){
-	    ukazatel[a]=ukazatel[a+1];}
+	for(a; a<MAX4; a++){ukazatel[a]=ukazatel[a+1];}
 	ukazatel[MAX4-1]= kkk;}
                     /*Раздел 2. Работа с файлами.*/
 int get_choice_file(void) {int b; /*Функция выбора в меню работы с файлами*/
