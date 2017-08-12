@@ -228,8 +228,7 @@ char put_check_operation(void){char operation; /*Функция и ввода и проверки ввод
 	   operation='Y';
 	return operation;}
 void cleaner(void){    /*Функция очистки строки*/
-	while (getchar() !='\n')
-		continue;}
+	while (getchar() !='\n') continue;}
 int check_nomer(){int c;      /*Функция проверки  номера массива*/
 	while ((c=check_number())>MAX4 || c<0){
 		if (c>MAX4)
