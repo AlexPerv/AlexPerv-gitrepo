@@ -241,8 +241,7 @@ void copy (struct knizhka *ukazatel, int a, int b){ /*Функция копирования элемен
 	ukazatel[b]=ukazatel[a];}
 void delete (struct knizhka *ukazatel, int a){ /*Функция удпления элемента массива*/
 	struct knizhka kkk = {{'\0', '\0'}, '\0', '\0', '\0'};
-	for(a; a<MAX4; a++){
-	    ukazatel[a]=ukazatel[a+1];}
+	for(a; a<MAX4; a++){ukazatel[a]=ukazatel[a+1];}
 	ukazatel[MAX4-1]= kkk;}
                     /*Раздел 2. Работа с файлами.*/
 int get_choice_file(void) {int b; /*Функция выбора в меню работы с файлами*/
